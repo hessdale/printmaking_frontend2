@@ -2,15 +2,19 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/ar">AR</router-link> |
+      <router-link to="/blocks">Blocks</router-link> |
+      <router-link to="/admin">Admin</router-link> |
+      <router-link to="/contact">Contact</router-link>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
-<style lang="scss">
+<style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Lora", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -19,14 +23,14 @@
 
 nav {
   padding: 30px;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+nav a.router-link-exact-active {
+  color: #a1a1a1;
 }
 </style>

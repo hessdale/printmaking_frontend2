@@ -1,16 +1,17 @@
 <template>
   <div>
-    <about-team></about-team>
+    <get-block></get-block>
     <page-footer></page-footer>
   </div>
 </template>
 
 <script>
-import AboutTeam from "@/components/AboutTeam.vue";
+import GetBlock from "@/components/GetBlock.vue";
+
 import PageFooter from "@/components/PageFooter.vue";
 export default {
   components: {
-    AboutTeam,
+    GetBlock,
     PageFooter,
   },
 };

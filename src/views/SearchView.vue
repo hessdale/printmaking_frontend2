@@ -1,16 +1,17 @@
 <template>
   <div>
-    <about-team></about-team>
+    <search-results></search-results>
     <page-footer></page-footer>
   </div>
 </template>
 
 <script>
-import AboutTeam from "@/components/AboutTeam.vue";
+import SearchResults from "@/components/SearchResults.vue";
+
 import PageFooter from "@/components/PageFooter.vue";
 export default {
   components: {
-    AboutTeam,
+    SearchResults,
     PageFooter,
   },
 };

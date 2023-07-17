@@ -1,10 +1,32 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import AdminView from '../views/AdminView.vue'
+import ARView from '../views/ARView.vue'
+import BlocksView from '../views/BlocksView.vue'
+import AboutView from '../views/AboutView.vue'
+import BlockView from '../views/BlockView.vue'
+import SearchView from '../views/SearchView.vue'
+import ContactView from '../views/ContactView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/admin',
+    name: 'admin',
+    component: AdminView
+  },
+  {
+    path: '/ar',
+    name: 'ar',
+    component: ARView
+  },
+  {
+    path: '/blocks',
+    name: 'blocks',
+    component: BlocksView
+  },
   {
     path: '/',
     name: 'home',
@@ -13,10 +35,22 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: AboutView
+  },
+  {
+    path: '/block/:block_id',
+    name: 'block',
+    component: BlockView
+  },
+  {
+    path: '/search/:search_params',
+    name: 'search',
+    component: SearchView
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: ContactView
   }
 ]
 
